@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (options) {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -31,6 +31,11 @@ App({
           })
         }
       }
+    })
+
+    console.log(options)
+    wx.setNavigationBarTitle({
+      title: options.mername//页面标题为路由参数
     })
   },
   globalData: {

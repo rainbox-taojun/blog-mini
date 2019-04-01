@@ -1,9 +1,19 @@
 /**app.wxss**/
+page {
+  background-color: #262C2D;
+  color: #fff;
+}
+
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  background-color: #0F0F0F;
-} 
+  background-color: #262C2D;
+}
+
+.app-navbar {
+  box-shadow: 0 2px 50px #1A1A1A;
+  border-bottom: 0!important;
+}

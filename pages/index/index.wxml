@@ -1,11 +1,12 @@
 <view class="container home">
-  <i-tabs
-    current="{{ current }}"
-    color="#FD5739"
-    i-class=""
-    bindchange="handleChange">
-      <i-tab key="tab1" title="选项1"></i-tab>
-      <i-tab key="tab2" title="选项2"></i-tab>
-      <i-tab key="tab3" title="选项3"></i-tab>
-  </i-tabs>
+  <app-navbar
+    tabs="{{['选项一', '选项二', '选项三']}}"
+    activeIndex="{{current}}"
+    app-navbar="app-navbar"
+    text-color="#707070"
+    text-active-color="#fff"
+    slider-color="#22B573"
+    bind:tab-click="tabToggle">
+    {{current}}
+  </app-navbar>
 </view>

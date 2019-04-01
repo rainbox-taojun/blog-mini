@@ -1,18 +1,26 @@
 Page({
   data: {
-    current: 'tab1',
-    current_scroll: 'tab1'
+    current: 0,   // 默认的tab
   },
 
-  handleChange({ detail }) {
+  // 标签切换事件
+  tabToggle(e) {
+    console.log(e)
     this.setData({
-      current: detail.key
-    });
+      current: e.detail.activeIndex
+    })
   },
 
-  handleChangeScroll({ detail }) {
-    this.setData({
-      current_scroll: detail.key
-    });
-  }
+  methods: {
+    
+  },
+  
+  lifetimes: {
+    attached() {
+      
+    },
+    detached() {
+      // 在组件实例被从页面节点树移除时执行
+    },
+  },
 });
