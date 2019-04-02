@@ -1,0 +1,43 @@
+/* components/list/list.wxss */
+.card {
+  position: relative;
+  margin-bottom: 26px;
+  padding: 0 20px;
+  height: 62px;
+}
+
+.card-picture {
+  position: absolute;
+  left: 20px;
+  height: 62px;
+  width: 80px;
+}
+
+.card-content-container {
+  margin-left: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: 50% 50%;
+  height: 60px;
+  text-align: left;
+  border-bottom: 2px solid #2C3637;
+}
+
+.card-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 16px;
+}
+
+.card-subtitle{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  color: #707070;
+  font-size: 12px;
+}
+
+.card-date {
+  color: #22BB76;
+  font-size: 14px;
+  text-align: right;
+}

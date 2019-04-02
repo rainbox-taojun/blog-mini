@@ -1,6 +1,8 @@
 <view class="container home">
+  <!-- 标签栏 -->
   <app-tabs
-    tabs="{{['选项一', 'javascript', '选项三']}}"
+    scroll
+    tabs="{{['all', '生活', 'javascript', 'node', '音乐']}}"
     activeIndex="{{current}}"
     app-tabs-container="app-tabs-container"
     app-tab="app-tab"
@@ -8,6 +10,14 @@
     text-active-color="#fff"
     slider-color="#22B573"
     bind:tab-click="tabToggle">
-    {{current}}
+    <!-- 文章列表 -->
+    <app-card
+      wx:for="{{list}}"
+      wx:key="item"
+      title="{{item.title}}"
+      subtitle="{{item.subtitle}}"
+      picture="{{item.picture}}"
+      date="{{item.date}}">
+    </app-card>
   </app-tabs>
 </view>

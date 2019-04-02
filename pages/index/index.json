@@ -1,6 +1,7 @@
 {
   "usingComponents": {
-    "app-tabs": "../../components/tabs/tabs"
+    "app-tabs": "../../components/tabs/tabs",
+    "app-card": "../../components/card/card"
   },
   "backgroundColor": "#0F0F0F"
 }

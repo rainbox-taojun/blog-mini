@@ -1,14 +1,17 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#262C2D",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "世界",
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#262C2D"
+    "backgroundColor": "#262C2D",
+    "backgroundColorTop": "#262C2D",
+    "backgroundColorBottom": "#262C2D"
   },
   "tabBar": {
     "color": "#545355",

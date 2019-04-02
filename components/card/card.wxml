@@ -1,0 +1,17 @@
+<!--components/list/list.wxml-->
+<view
+  class="card"
+  bind:tap="openArticle">
+  <image
+    class="card-picture"
+    src="{{picture ? picture : '../../assets/images/picture.png'}}"
+    mode="aspectFit"
+    lazy-load>
+  </image>
+
+  <view class="card-content-container">
+    <text class="card-title">{{title}}</text>
+    <text class="card-date">{{date}}</text>
+    <text class="card-subtitle">{{subtitle}}</text>
+  </view>
+</view>

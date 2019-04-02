@@ -8,8 +8,6 @@
   font-size:0;
 }
 .scroll__item {
-  position: relative;
-  padding: 13px 0px;
   width: 80px;
 }
 
