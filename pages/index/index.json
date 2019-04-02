@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "app-navbar": "../../components/navbar/navbar"
+    "app-tabs": "../../components/tabs/tabs"
   },
   "backgroundColor": "#0F0F0F"
 }

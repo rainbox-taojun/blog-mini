@@ -1,0 +1,19 @@
+<!--components/tab/tab.wxml-->
+<block
+  wx:for="{{tabs}}"
+  wx:key="*this">
+  <view
+    id="{{index}}"
+    class="tab__item {{activeIndex == index ? 'tab__item_on' : ''}} {{scroll ? 'scroll__item' : ''}}"
+    bind:tap="tabClick">
+    <view
+      class="tab__title"
+      style="color: {{activeIndex == index ? textActiveColor : textColor}}">
+      {{item}}
+    </view>
+  </view>
+</block>
+<view
+  class="tab__slider"
+  style="transform: translateX({{sliderOffset}}px);background-color: {{sliderColor}};width: {{tabSliderWidth}}px">
+</view>

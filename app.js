@@ -33,10 +33,10 @@ App({
       }
     })
 
-    console.log(options)
-    wx.setNavigationBarTitle({
-      title: options.mername//页面标题为路由参数
-    })
+    // console.log(options)
+    // wx.setNavigationBarTitle({
+    //   title: options.mername//页面标题为路由参数
+    // })
   },
   globalData: {
     userInfo: null

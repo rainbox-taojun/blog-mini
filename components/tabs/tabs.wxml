@@ -1,0 +1,37 @@
+<view class="tabs">
+  <scroll-view
+    wx:if="{{ scroll }}"
+    scroll-x="true"
+    class="tabs-scroll tabs-container app-tabs-container">
+    <tab
+      class="tab app-tab"
+      scroll="{{scroll}}"
+      tabs="{{tabs}}"
+      activeIndex="{{activeIndex}}"
+      text-color="{{textColor}}"
+      text-active-color="{{textActiveColor}}"
+      slider-color="{{sliderColor}}"
+      bind:tab-click="tabClick">
+    </tab>
+  </scroll-view>
+  <view
+    wx:else
+    class="tabs-container app-tabs-container">
+    <tab
+      class="tab app-tab"
+      scroll="{{scroll}}"
+      tabs="{{tabs}}"
+      activeIndex="{{activeIndex}}"
+      text-color="{{textColor}}"
+      text-active-color="{{textActiveColor}}"
+      slider-color="{{sliderColor}}"
+      bind:tab-click="tabClick">
+    </tab>
+  </view>
+
+  <view class="tab__panel">
+    <view class="tab__content">
+      <slot></slot>
+    </view>
+  </view>
+</view>

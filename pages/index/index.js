@@ -5,7 +5,6 @@ Page({
 
   // 标签切换事件
   tabToggle(e) {
-    console.log(e)
     this.setData({
       current: e.detail.activeIndex
     })

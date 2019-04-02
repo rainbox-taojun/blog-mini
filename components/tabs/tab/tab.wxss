@@ -1,0 +1,41 @@
+/* components/tab/tab.wxss */
+.tab__item {
+  position:relative;
+  display:block;
+  flex:1;
+  padding:13px 0px;
+  text-align:center;
+  font-size:0;
+}
+.scroll__item {
+  position: relative;
+  padding: 13px 0px;
+  width: 80px;
+}
+
+.tab__item.tab__item_on {
+  color:#1aad19;
+}
+
+
+.tab__title {
+  display:inline-block;
+  font-size:15px;
+  /* max-width:96px; */
+  width:80px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  word-wrap:normal;
+}
+
+.tab__slider {
+  position:absolute;
+  content:" ";
+  left:0;
+  bottom:0;
+  width:80px;
+  height:3px;
+  background-color:#1aad19;
+  transition:transform .3s;
+}

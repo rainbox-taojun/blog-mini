@@ -1,0 +1,38 @@
+.tabs {
+  position:relative;
+  height:100%;
+}
+
+.tabs-container {
+  height: 46px;
+  /* align-items:center; */
+}
+
+.tabs-scroll {
+  display:block;
+  overflow-x:auto;
+  white-space:nowrap;
+}
+
+.tab {
+  display:flex;
+  position:absolute;
+  z-index:500;
+  top:0;
+  width:100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab__panel {
+  box-sizing:border-box;
+  height:100%;
+  padding-top:25px;
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+
+.tab__content{
+  /* padding-top: 60px; */
+  text-align: center;
+}

@@ -1,12 +1,13 @@
 <view class="container home">
-  <app-navbar
-    tabs="{{['选项一', '选项二', '选项三']}}"
+  <app-tabs
+    tabs="{{['选项一', 'javascript', '选项三']}}"
     activeIndex="{{current}}"
-    app-navbar="app-navbar"
+    app-tabs-container="app-tabs-container"
+    app-tab="app-tab"
     text-color="#707070"
     text-active-color="#fff"
     slider-color="#22B573"
     bind:tab-click="tabToggle">
     {{current}}
-  </app-navbar>
+  </app-tabs>
 </view>
