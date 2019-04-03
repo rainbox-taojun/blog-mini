@@ -1,2 +1,3 @@
 <!--pages/article/article.wxml-->
-<text>pages/article/article.wxml</text>
+<import src="/towxml/entry.wxml"/>
+<template is="entry" data="{{...article}}"/>

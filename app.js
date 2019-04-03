@@ -1,4 +1,8 @@
 //app.js
+import Towxml from '/towxml/main'   // markdown和html转wxml
+import regeneratorRuntime from '/utils/regenerator/runtime-module' // runtime-module 支持async/await
+global.regeneratorRuntime = regeneratorRuntime  // runtime-module保存至全局
+
 App({
   onLaunch: function (options) {
     // 展示本地存储能力
@@ -32,12 +36,10 @@ App({
         }
       }
     })
-
-    // console.log(options)
-    // wx.setNavigationBarTitle({
-    //   title: options.mername//页面标题为路由参数
-    // })
   },
+
+  towxml: new Towxml(),
+
   globalData: {
     userInfo: null
   }

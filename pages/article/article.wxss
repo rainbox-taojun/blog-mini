@@ -1,1 +1,2 @@
 /* pages/article/article.wxss */
+@import '/towxml/style/main.wxss';

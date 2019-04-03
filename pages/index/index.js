@@ -1,14 +1,9 @@
+const { regeneratorRuntime } = global
+
 Page({
   data: {
     current: 0,   // 默认的tab
     list: [
-      {
-        id: 1,
-        title: '林雅迪',
-        subtitle: '这是一段林雅迪的信息',
-        picture: '',
-        date: '2019-06-21'
-      },
       {
         id: 2,
         title: '陶俊',
@@ -27,11 +22,11 @@ Page({
   },
 
   // 获取文章列表
-  getArticleList() {
-    console.log('获取文章列表')
+  async getArticleList() {
+    await console.log('获取文章列表')
   },
 
   onShow() {
     this.getArticleList()
   }
-});
+})

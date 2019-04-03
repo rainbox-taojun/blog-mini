@@ -13,10 +13,10 @@ page {
   background-color: #262C2D;
 }
 
+/* components/tabs */
 .app-tabs-container {
   box-shadow: 0 5px 20px #1A1A1A;
 }
-
 .app-tab {
   border-bottom: 0!important;
 }
