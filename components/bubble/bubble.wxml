@@ -1,0 +1,15 @@
+<!--components/bubble/bubble.wxml-->
+<view class="bubble">
+  <image
+    class="bubble-avatar"
+    src="{{avatar ? avatar : '../../assets/images/avatar-default.png'}}"
+    mode="scaleToFill"
+    lazy-load>
+  </image>
+
+  <view class="bubble-content-container">
+    <text class="bubble-username">{{username}}</text>
+    <text class="bubble-content">{{content}}</text>
+    <text class="bubble-time">{{time}}</text>
+  </view>
+</view>

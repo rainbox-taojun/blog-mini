@@ -8,6 +8,20 @@ Page({
    */
   data: {
     article: {},
+    comment: [
+      {
+        username: '小老弟',
+        content: '卧槽？牛逼啊！！！',
+        time: '2019-01-01 20:22',
+        avatar: ''
+      },
+      {
+        username: '老哥',
+        content: '小老弟小老弟小老弟',
+        time: '2019-01-22 20:22',
+        avatar: ''
+      }
+    ],
     markdown: `<p align="center">
   <a href="http://vux.li">
     <img src="https://i.loli.net/2017/11/20/5a12187ebf2e0.png" width="175">

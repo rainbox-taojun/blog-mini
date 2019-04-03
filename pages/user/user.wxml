@@ -1,3 +1,5 @@
+<!-- 人造导航栏阴影 -->
+<view class="shadow-line"></view>
 <!--user.wxml-->
 <view class="container user">
   <view class="userinfo">

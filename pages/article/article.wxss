@@ -1,2 +1,6 @@
 /* pages/article/article.wxss */
 @import '/towxml/style/main.wxss';
+
+.comment {
+  margin-top: 20px;
+}

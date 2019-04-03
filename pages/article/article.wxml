@@ -1,3 +1,23 @@
 <!--pages/article/article.wxml-->
+<!-- 人造阴影 -->
+<view class="shadow-line"></view>
+
+<!-- 文章内容 -->
 <import src="/towxml/entry.wxml"/>
 <template is="entry" data="{{...article}}"/>
+
+<!-- 评论列表 -->
+<view class="comment">
+  <i-divider content="评论"></i-divider>
+
+  <app-bubble
+    wx:for="{{comment}}"
+    wx:key="item"
+    username="{{item.username}}"
+    content="{{item.content}}"
+    time="{{item.time}}"
+    avatar="{{item.avatar}}">
+  </app-bubble>
+</view>
+
+<!-- 评论输入框 -->
