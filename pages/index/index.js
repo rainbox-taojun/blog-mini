@@ -1,3 +1,4 @@
+import apis from '../../apis/index.js'
 const { regeneratorRuntime } = global
 
 Page({
@@ -23,7 +24,8 @@ Page({
 
   // 获取文章列表
   async getArticleList() {
-    await console.log('获取文章列表')
+    let classify = await apis.getClassify()
+    await console.log('获取文章列表', classify)
   },
 
   onShow() {
