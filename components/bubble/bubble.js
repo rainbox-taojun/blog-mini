@@ -5,16 +5,20 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    username: {
+    self: {             // 对话是否由自己发出
+      type: Boolean,
+      value: false
+    },
+    username: {         // 用户名
       type: String
     },
-    content: {
+    content: {          // 内容
       type: String
     },
-    time: {
+    time: {             // 发送时间
       type: String
     },
-    avatar: {
+    avatar: {           // 头像
       type: String
     }
   },

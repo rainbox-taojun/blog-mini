@@ -1,5 +1,5 @@
 <!-- 人造导航栏阴影 -->
-<view class="shadow-line"></view>
+<shadow-line></shadow-line>
 <!--user.wxml-->
 <view class="container user">
   <view class="userinfo">

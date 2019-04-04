@@ -1,0 +1,46 @@
+/* components/reply-box/reply-box.wxss */
+.reply-box {
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: auto 40px;
+}
+
+.reply-textarea {
+  padding: 20px;
+  margin-right: 20px;
+  width:auto;
+  box-shadow:0 7px 10px #1A1A1A;
+  border-radius:12px;
+  background-color:#2C3638;
+}
+
+.reply-bar {
+  margin-right: 20px;
+  padding-left: 20px;
+  line-height:40px;
+  height:40px;
+  color:#707070;
+  font-size:12px;
+  box-shadow:0 7px 10px #1A1A1A;
+  border-radius:40px;
+  background-color:#2C3638;
+}
+
+.reply-btn {
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 40px;
+  height:40px;
+  border-radius: 20px;
+  box-shadow:0 7px 10px #1A1A1A;
+  background-color: #22B573!important;
+}
+
+.reply-btn-img {
+  width:25px;
+height:20px;
+
+}

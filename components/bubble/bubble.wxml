@@ -1,15 +1,19 @@
 <!--components/bubble/bubble.wxml-->
 <view class="bubble">
   <image
-    class="bubble-avatar"
+    class="bubble-avatar {{self ? 'bubble-avatar-self' : ''}}"
     src="{{avatar ? avatar : '../../assets/images/avatar-default.png'}}"
     mode="scaleToFill"
     lazy-load>
   </image>
 
-  <view class="bubble-content-container">
-    <text class="bubble-username">{{username}}</text>
-    <text class="bubble-content">{{content}}</text>
-    <text class="bubble-time">{{time}}</text>
+  <view class="bubble-content-container {{self ? 'bubble-content-container-self' : ''}}">
+    <image
+      class="bubble-arrow {{self ? 'bubble-arrow-right' : 'bubble-arrow-left' }}"
+      src="{{self ? '../../assets/images/triangle-grey.png' : '../../assets/images/triangle-green.png' }}">
+    </image>
+    <text class="bubble-username {{self ? 'bubble-username-self' : ''}}">{{username}}</text>
+    <text class="bubble-content {{self ? 'bubble-content-self' : ''}}">{{content}}</text>
+    <text class="bubble-time {{self ? 'bubble-time-self' : ''}}">{{time}}</text>
   </view>
 </view>

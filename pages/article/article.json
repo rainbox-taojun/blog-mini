@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "i-divider": "../../iview/divider/index",
-    "app-bubble": "../../components/bubble/bubble"
+    "app-bubble": "../../components/bubble/bubble",
+    "app-reply-box": "../../components/reply-box/reply-box",
+    "shadow-line": "../../components/shadow-line/shadow-line"
   }
 }

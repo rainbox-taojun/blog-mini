@@ -1,23 +1,24 @@
 <!--pages/article/article.wxml-->
 <!-- 人造阴影 -->
-<view class="shadow-line"></view>
+<shadow-line></shadow-line>
 
 <!-- 文章内容 -->
 <import src="/towxml/entry.wxml"/>
 <template is="entry" data="{{...article}}"/>
 
-<!-- 评论列表 -->
+<!-- 评论 -->
 <view class="comment">
   <i-divider content="评论"></i-divider>
-
+  <!-- 评论列表 -->
   <app-bubble
     wx:for="{{comment}}"
     wx:key="item"
+    self="{{item.self}}"
     username="{{item.username}}"
     content="{{item.content}}"
     time="{{item.time}}"
     avatar="{{item.avatar}}">
   </app-bubble>
+  <!-- 评论输入框 -->
+  <app-reply-box></app-reply-box>
 </view>
-
-<!-- 评论输入框 -->

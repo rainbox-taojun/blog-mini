@@ -14,8 +14,13 @@
   width: 45px;
   border-radius: 45px;
 }
+.bubble-avatar.bubble-avatar-self {
+  left: auto;
+  right:20px;
+}
 
 .bubble-content-container {
+  position: relative;
   padding: 10px 10px 5px 20px;
   margin-left:80px;
   min-height: 50px;
@@ -23,10 +28,34 @@
   border-radius: 0 12px 12px 12px;
   box-shadow:0 7px 10px #1A1A1A;
 }
+.bubble-content-container.bubble-content-container-self {
+  margin-left:0;
+  margin-right: 80px;
+  background-color: #CCCCCC;
+  border-radius: 12px 0 12px 12px;
+}
+
+.bubble-arrow {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  width: 30px;
+  height: 15px;
+}
+.bubble-arrow-left {
+  left: -15px;
+}
+.bubble-arrow-right {
+  right: -15px;
+}
 
 .bubble-username {
+  margin-bottom: 5px;
   display: block;
   font-size: 14px;
+}
+.bubble-username.bubble-username-self {
+  display: none;
 }
 .bubble-content {
   display: block;

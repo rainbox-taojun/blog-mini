@@ -13,13 +13,15 @@ Page({
         username: '小老弟',
         content: '卧槽？牛逼啊！！！',
         time: '2019-01-01 20:22',
-        avatar: ''
+        avatar: '',
+        self: false,
       },
       {
         username: '老哥',
         content: '小老弟小老弟小老弟',
         time: '2019-01-22 20:22',
-        avatar: ''
+        avatar: '',
+        self: true,
       }
     ],
     markdown: `<p align="center">
