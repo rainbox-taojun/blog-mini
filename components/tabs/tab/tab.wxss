@@ -9,6 +9,7 @@
 }
 .scroll__item {
   width: 80px;
+  flex:0;
 }
 
 .tab__item.tab__item_on {

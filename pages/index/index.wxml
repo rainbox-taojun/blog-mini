@@ -2,7 +2,7 @@
   <!-- 标签栏 -->
   <app-tabs
     scroll
-    tabs="{{['all', '生活', 'javascript', 'node', '音乐']}}"
+    tabs="{{classifyList}}"
     activeIndex="{{current}}"
     app-tabs-container="app-tabs-container"
     app-tab="app-tab"
@@ -12,7 +12,7 @@
     bind:tab-click="tabToggle">
     <!-- 文章列表 -->
     <app-card
-      wx:for="{{list}}"
+      wx:for="{{articlesList}}"
       wx:key="item"
       title="{{item.title}}"
       subtitle="{{item.subtitle}}"
