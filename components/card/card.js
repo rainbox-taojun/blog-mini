@@ -5,9 +5,8 @@ Component({
    */
   properties: {
     // id
-    id: {
-      type: Number,
-      value: 0
+    articleID: {
+      type: String
     },
     // 标题
     title: {
@@ -42,9 +41,17 @@ Component({
     // 打开文章
     openArticle() {
       wx.navigateTo({
-        url: '../article/article?id=' + this.data.id
+        url: '../article/article?id=' + this.data.articleID
       })
     }
-    
-  }
+  },
+
+  lifetimes: {
+    attached() {
+      
+    },
+    detached() {
+
+    },
+  },
 })

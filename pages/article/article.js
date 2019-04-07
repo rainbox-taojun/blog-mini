@@ -98,6 +98,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log('options', options)
     console.log(app.towxml)
     //将markdown内容转换为towxml数据
     let data = app.towxml.toJson(this.data.markdown, 'markdown')

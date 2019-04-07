@@ -13,16 +13,27 @@ Page({
 
   // 标签切换事件
   tabToggle(e) {
+    this.resetData()  // 重置数据
     this.setData({
-      current: e.detail.activeIndex
+      current: e.detail.activeIndex,  // tabs组件返回当前点击的标签序号
+      page: 1 // 重置页数为第一页
     })
+    if (this.data.current) {
+      // 当current不为0 获取该序号下的文章
+      let index = Number.parseInt(this.data.current)
+      let classify = this.data.classifyList[index]
+      this.getArticleListByClass(classify)
+    }else {
+      // 当current为0 获取【全部】文章
+      this.getArticleList()
+    }
   },
 
   // 获取分类列表
   async getClassify() {
     let classify = await apis.getClassify()
     await this.setData({
-      classifyList: classify
+      classifyList: ['全部'].concat(classify)
     })
   },
 
@@ -34,22 +45,29 @@ Page({
     await this.setData({
       articlesList: this.data.articlesList.concat(articleList.list)
     })
+    console.log(this.data.articlesList)
   },
 
   // 根据分类获取文章
   async getArticleListByClass(classify) {
-
+    let articleList = await apis.getArticleListByClassify({
+      page: this.data.page,
+      classify: classify
+    })
+    await this.setData({
+      articlesList: this.data.articlesList.concat(articleList.list)
+    })
   },
 
-  init() {
+  // 重置数据
+  resetData() {
     this.setData({
       articlesList: []
     })
   },
 
   // 初始化
-  onShow() {
-    this.init()
+  onLoad() {
     this.getClassify()
     this.getArticleList()
   }

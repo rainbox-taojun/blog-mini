@@ -14,6 +14,7 @@
     <app-card
       wx:for="{{articlesList}}"
       wx:key="item"
+      articleID="{{item.id}}"
       title="{{item.title}}"
       subtitle="{{item.subtitle}}"
       picture="{{item.picture}}"

@@ -6,7 +6,7 @@ const { regeneratorRuntime } = global       // async/await
 function request(url, type, parameter) {
   return new Promise((resolve, reject) => {
     wx.request({
-      url: BASE_URL + url,// 接口地址
+      url: BASE_URL + 'api' + url,// 接口地址
       data: parameter,    // 请求参数
       header: {           // 请求头部
         'content-type': 'application/json' // 默认值
